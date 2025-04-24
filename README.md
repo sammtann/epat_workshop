@@ -33,11 +33,11 @@
 
 6. git commit -m "<commit message>" (commit new/updated files to local repo)
 
-7. git push -u origin master (create a master branch in github and push the code to github master branch)
+7. git push -u origin main (create a main branch in github and push the code to github main branch)
 
-8. <don't develop in master branch - final/latest working baseline>
+8. <don't develop in main branch - final/latest working baseline>
 
-9. git checkout -b develop master (clone a copy from master to develop branch locally)
+9. git checkout -b develop main (clone a copy from main to develop branch locally)
 
 10. git push -u origin develop (push from local develop branch to github develop branch)
 
@@ -55,13 +55,13 @@
 
 17. git push -u origin develop (push code on local develop branch to github develop branch)
 
-18. git checkout master
+18. git checkout main
 
-19. git merge develop (after changes in develop branch are complete without errors, in master branch, merge changes from develop branch)
+19. git merge develop (after changes in develop branch are complete without errors, in main branch, merge changes from develop branch)
 
-20. git push -u origin master (in master branch to push merged changes from develop branch to github master branch)
+20. git push -u origin main (in main branch to push merged changes from develop branch to github main branch)
 
-##Deploy to heroku (must be on master branch locally and remote)
+##Deploy to heroku (must be on main branch locally and remote)
 1. Create/use an existing heroku account
 
 2. On your project root, you need a system.properties file.
@@ -73,7 +73,7 @@ java.runtime.version=18
 
 5. git commit -m "added/updated system.properties"
 
-6. git push -u origin master
+6. git push -u origin main
 
 7. heroku login (in your terminal window/command prompt in the project root directory)
 
@@ -81,7 +81,7 @@ java.runtime.version=18
 
 9. git remote -v (all remote branches. you should see refernce URL to heroku)
 
-10. git push -u heroku master
+10. git push -u heroku main
 
 
 ## Git reset reference
